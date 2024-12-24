@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA</title>
+    <style>
+        BODY{
+            margin: 0;
+            padding: 0;
+            background-color:#756557;
+           }
+
+
+           .IO{
+            margin-left: 80PX;
+            font-size: 40PX;
+            line-height: 70px;
+            background-color:#756557 ;
+            
+           }
+           
+        
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    margin-top: 50PX;
+    border-radius: 40px;
+    width: 90%;
+    height: 30px;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 45px;
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+
+}
+
+.navbar a:hover {
+    background-color:#756557;
+    color:black ;
+    border-radius: 20px;
+
+}
+
+.navbar a.po {
+    background-color: #756557;
+    color:black ;
+    border-radius: 20px;
+
+}
+
+.navbar .logo {
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(164, 211, 244) ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10PX;
+    background-color:#756557;
+    color:black ;
+    padding: 0px 30px 0px 30px;
+    border-radius: 35px;
+} 
+
+    .OMG{
+        margin-left: 2%;
+        margin-top: 2%;
+        border: 3px solid white ;
+        border-radius: 20px;
+        width: 95%;
+        height: 500PX;
+
+    }
+
+    .block{
+        height: 400px;
+        width: 30%;
+        border: 3px solid white;
+        border-radius: 20px;
+        margin-left: 2%;
+        margin-top: 3%;
+        display: inline-block;
+
+    }
+    .size{
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .WORD{
+        font-size: 40PX;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+      
+    }
+    .VM{
+        padding: 20PX;
+        border-radius: 30PX;
+        background-color: white;
+        color: #756557;
+        font-family: cursive;
+        font-weight: 300;
+        font-size: 20PX;
+        margin-top: -200px;
+        margin-left: 30%;
+    }
+    
+
+
+    .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 40px;
+           
+        }
+
+        h1 {
+            text-align: center;
+            color: BLACK;
+            margin-top: 20px;
+           font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 18%;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin-top: 10px;
+        }
+
+       
+        .BTTN{
+    padding: 10PX 30PX 10PX 30PX    ;
+    font-size: 20PX;
+    background-color: #756557;
+    color: white;
+    border-radius:20PX;
+    font-family: cursive;
+}    
+        
+
+
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            color: #756557;
+        }
+
+        .price {
+            color: #333;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+
+        .discount-price {
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .rating {
+            color: #f39c12;
+        }
+
+        .footer {
+            text-align: center;
+            margin-right: 1%;
+            margin-left: -1.5%;
+            background-color: #333;
+            color: white;
+            width: 100%;
+        }
+
+        @media (max-width: 668px) {
+            .product {
+                width: 100%;
+            }
+        }
+
+
+
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer-links {
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            color: #756557;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .subscribe-section {
+            background-color:white ;
+            color: #756557;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            margin-left: -3%;
+        }
+
+        .subscribe-section input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .subscribe-section button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #756557;
+            color:white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .subscribe-section button:hover {
+            background-color:black;
+            color: #e6e3e3;
+        }
+    </style>
+
+  
+
+    </head>
+    <BODY>
+        <div class="navbar">
+            <div class="logo"> AURA </div>
+            <div>
+                <a href="AURA.HTML" class="po" >Home</a>
+                <a href="FASHION.HTML">Fashion</a>
+                <a href="ABOUT.HTML">About</a>
+                <a href="CONTACTPAGE.HTML" >Contact</a>
+            </div>
+        </div>
+        
+
+        <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/PPSSTT.png" alt="Description of image" class="OMG">
+
+
+        <h2 class="WORD" style="margin-left: 10%;  margin-top: 5%;"> MALE HUDDIES </h2>
+
+        <h2 class="WORD"  style="margin-left: 45%;  margin-top: -5%;"> CHILDRENS</h2> 
+
+          <h2 class="WORD"  style="margin-left: 75%;   margin-top: -5%;"> FEMALE HUDDIES </h2>
+
+
+<DIV class="block">
+    <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/maleh.png" alt="Description of image" class="size">
+    <button class="VM">VIEW MORE</button>
+
+</DIV>
+
+<DIV class="block">
+    <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/smale.png" alt="Description of image" class="size">
+    <button class="VM">VIEW MORE</button>
+
+</DIV>
+
+
+<DIV class="block">
+    <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/femaleh.png" alt="Description of image" class="size">
+    <button class="VM">VIEW MORE</button>
+</DIV>
+
+
+<div class="container">
+    
+    <div class="product-grid">
+        <!-- Repeat this block for each product -->
+      
+        <div class="product">
+            <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/WHITEC.png" alt="Hoodie 2">
+            <h2>AURA CREAM S2</h2>
+            <button class="BTTN">BUY NOW</button>
+            <div class="price">
+                <span class="original-price">₹2000</span> 
+                <span class="discount-price">₹1600</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+        <!-- Add more product blocks here -->
+        <div class="product">
+            <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/REDC.png" alt="Hoodie 1">
+            <h2>AURA REDY  S1</h2>
+           <a href="PRODUCT-DESC.HTML"><button class="BTTN">BUY NOW</button></a>
+            <div class="price">
+                <span class="original-price">₹2000</span> 
+                <span class="discount-price">₹1500</span>
+            </div>
+            <div class="rating">★★★★☆</div>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/JIJIC.png" alt="Hoodie 1">
+            <h2>AURA BLUEISH  S1</h2>
+            <button class="BTTN">BUY NOW</button>
+            <div class="price">
+                <span class="original-price">₹2000</span> 
+                <span class="discount-price">₹1500</span>
+            </div>
+            <div class="rating">★★★★☆</div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="product">
+            <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/BLACKC.png" alt="Hoodie 1">
+            <h2>AURA BLACK  S1</h2>
+            <button class="BTTN">BUY NOW</button>
+            <div class="price">
+                <span class="original-price">₹2000</span> 
+                <span class="discount-price">₹1500</span>
+            </div>
+            <div class="rating">★★★★☆</div>
+        </div>
+
+    
+        <!-- Example of another product -->
+        <div class="product">
+            <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/dgnc.png" alt="Hoodie 2">
+            <h2>AURA fUSION S2</h2>
+            <button class="BTTN">BUY NOW</button>
+            <div class="price">
+                <span class="original-price">₹2000</span> 
+                <span class="discount-price">₹1600</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+        <!-- Add more product blocks here -->
+        <div class="product">
+            <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/purplec.png" alt="Hoodie 1">
+            <h2>AURA PURPLE  S1</h2>
+            <button class="BTTN">BUY NOW</button>
+            <div class="price">
+                <span class="original-price">₹2000</span> 
+                <span class="discount-price">₹1500</span>
+            </div>
+            <div class="rating">★★★★☆</div>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/greenc.png" alt="Hoodie 1">
+            <h2>AURA GREEN  S1</h2>
+            <button class="BTTN">BUY NOW</button>
+            <div class="price">
+                <span class="original-price">₹2000</span> 
+                <span class="discount-price">₹1500</span>
+            </div>
+            <div class="rating">★★★★☆</div>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Abhishek\OneDrive\Desktop\AURA WEBSITE/ORGC.png" alt="Hoodie 1">
+            <h2>AURA ORANGE S1</h2>
+            <button class="BTTN">BUY NOW</button>
+            <div class="price">
+                <span class="original-price">₹2000</span> 
+                <span class="discount-price">₹1500</span>
+            </div>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <!-- Example of another product -->
+        
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Other sections of the page -->
+
+  <div class="subscribe-section">
+    <h2>Stay Updated</h2>
+    <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+    <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+
+<div class="footer">
+    <div class="footer-links">
+        <a href="ABOUT.HTML">About Us</a>
+        <a href="CONTACTPAGE.HTML">Contact</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+    </div>
+    <p>&copy; 2024 Your Clothing Brand. All rights reserved.</p>
+</div>    
+   
+</body>
+</html>

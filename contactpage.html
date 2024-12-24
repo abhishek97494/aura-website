@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: white;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 40px;
+            margin-top: 1%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #756557;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #756557;
+        }
+
+        button {
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #756557;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #000000;
+            color: white;
+        }
+
+
+        .IO {
+            margin-left: 80PX;
+            font-size: 40PX;
+            line-height: 70px;
+            background-color: #756557;
+
+        }
+
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+            margin-top: 50PX;
+            border-radius: 40px;
+            width: 90%;
+            height: 30px;
+            margin-left: 3%;
+            margin-right: 5%;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 45px;
+            display: inline-block;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+
+
+        }
+
+        .navbar a:hover {
+            background-color: #756557;
+            color: black;
+            border-radius: 20px;
+
+        }
+
+        .navbar a.po {
+            background-color: #756557;
+            color: black;
+            border-radius: 20px;
+
+        }
+
+        .navbar .logo {
+            font-size: 50px;
+            font-weight: bold;
+            color: rgb(164, 211, 244);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 10PX;
+            background-color: #756557;
+            color: black;
+            padding: 0px 30px 0px 30px;
+            border-radius: 35px;
+        }
+
+        .OMG {
+            margin-left: 2%;
+            margin-top: 2%;
+            border: 3px solid white;
+            border-radius: 20px;
+            width: 95%;
+            height: 500PX;
+
+        }
+
+        .block {
+            height: 400px;
+            width: 30%;
+            border: 3px solid white;
+            border-radius: 20px;
+            margin-left: 2%;
+            margin-top: 3%;
+            display: inline-block;
+
+        }
+
+        .size {
+            height: 400px;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .WORD {
+            font-size: 40PX;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+        }
+    </STYLE>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"> AURA </div>
+        <div>
+            <a href="index.html" class="po">Home</a>
+            <a href="fashion.html">Fashion</a>
+            <a href="about.html">About</a>
+            <a href="contactpage.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Your Clothing Brand. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
